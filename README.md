@@ -1,5 +1,5 @@
 
-# python ubuntu+Django+uwsgi+nginx 設定筆記
+# python ubuntu+Django+uwsgi+nginx 設定
 
 ## 主要内容
 > ### python安裝
@@ -53,7 +53,7 @@
 
 3.`python manage.py startapp myapp`
 
-4.`修改myapp/view.py`
+4.修改`myapp/view.py`
 
 ```python
 from django.http import HttpResponse
@@ -61,7 +61,7 @@ def index(request):
     return HttpResponse("Hello, world.")
 
 ```
-5.`新增myapp/urls.py`
+5.新增`myapp/urls.py`
 
 ```python
 from django.urls import path
@@ -219,3 +219,5 @@ home=/home/lin/miniconda3/envs/django/
 ```
 
 5.`http://localhost:8000` 完成!
+
+
